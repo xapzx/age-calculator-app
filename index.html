@@ -14,18 +14,27 @@
   <script src="age.js" defer></script>
 </head>
 <body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+  <main>
+    <div class="input-wrapper">
+      <div class="day-input">
+        <label for="day">Day</label>
+        <input type="text" name="day" id="day" placeholder="DD" maxlength="2">
+      </div>
+      <div class="month-input">
+        <label for="month">Month</label>
+        <input type="text" name="month" id="month" placeholder="MM" maxlength="2">
+      </div>
+      <div class="year-input">
+        <label for="year">Year</label>
+        <input type="text" name="year" id="year" placeholder="YYYY" maxlength="4">
+      </div>
+    </div>
+    <img src="assets/images/icon-arrow.svg" alt="Divider with arrow">
+    <div class="age-wrapper">
+      <div class="age-years"><span class="age-years-data">--</span>years</div>
+      <div class="age-months"><span class="age-months-data">--</span>months</div>
+      <div class="age-days"><span class="age-days-data">--</span>days</div>
+    </div>
+  </main>
 </body>
 </html>
