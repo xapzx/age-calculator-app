@@ -73,7 +73,7 @@ main {
 
 .input-item {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto 1fr;
     gap: 4px;
 }
 
@@ -92,6 +92,20 @@ main {
     
     .input-item {
         gap: 0.5rem;
+    }
+
+    .error {
+        color: var(--clr-primary-lightred);
+    }
+
+    .error > input {
+        border-color: var(--clr-primary-lightred);
+    }
+
+    .error-msg {
+        text-transform: none;
+        font-weight: var(--fw-regular-i);
+        font-style: italic;
     }
 }
 
