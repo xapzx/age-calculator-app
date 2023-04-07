@@ -34,8 +34,13 @@ main {
 }
 
 @media (min-width: 800px) {
+    body {
+        padding: 10rem 0;
+    }
+
     main {
         padding: 3rem;
+        border-radius: 1rem 1rem 10rem 1rem;
     }
 }
 
@@ -57,6 +62,13 @@ main {
     padding: 0.625rem;
     border: 1px solid var(--clr-neutral-lightgrey);
     border-radius: 8px;
+    caret-color: var(--clr-primary-purple);
+}
+
+.input-wrapper input:focus {
+    outline: none;
+    border: 1px solid var(--clr-primary-purple);
+    cursor: pointer;
 }
 
 .input-item {
@@ -80,5 +92,68 @@ main {
     
     .input-item {
         gap: 0.5rem;
+    }
+}
+
+.divider {
+    border: 1px solid var(--clr-neutral-lightgrey);
+    position: relative;
+    margin: 4rem 0;
+}
+
+.arrow-wrapper {
+    background-color: var(--clr-primary-purple);
+    display: grid;
+    place-content: center;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.arrow {
+    width: 1.5rem;
+}
+
+@media (min-width: 800px) {
+    .divider {
+        margin: 3rem 0;
+    }
+
+    .arrow-wrapper {
+        width: 90px;
+        left: 100%;
+        transform: translateX(-100%) translateY(-50%);
+    }
+
+    .arrow-wrapper:hover {
+        background-color: var(--clr-neutral-offblack);
+        cursor: pointer;
+    }
+
+    .arrow {
+        width: 2.75rem;
+    }
+}
+
+.age-wrapper {
+    font-size: 3.275rem;
+    font-weight: var(--fw-xbold-i);
+    font-style: italic;
+    line-height: 3.75rem;
+}
+
+.age-wrapper > div > span {
+    color: var(--clr-primary-purple);
+}
+
+@media (min-width: 800px) {
+    .age-wrapper {
+        font-size: 6rem;
+        font-weight: var(--fw-xbold-i);
+        font-style: italic;
+        line-height: 6.5rem;
     }
 }
