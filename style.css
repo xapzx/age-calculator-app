@@ -38,3 +38,47 @@ main {
         padding: 3rem;
     }
 }
+
+.input-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: var(--clr-neutral-smokegrey);
+    text-transform: uppercase;
+}
+
+.input-wrapper label {
+    letter-spacing: 3px;
+}
+
+.input-wrapper input {
+    font-size: 1.25rem;
+    padding: 0.625rem;
+    border: 1px solid var(--clr-neutral-lightgrey);
+    border-radius: 8px;
+}
+
+.input-item {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 4px;
+}
+
+@media (min-width: 800px) {
+    .input-wrapper {
+        width: 45rem;
+        font-size: 0.875rem;
+        gap: 2rem;
+        padding-right: 11rem;
+    }
+
+    .input-wrapper input {
+        font-size: 2rem;
+        padding: 0.625rem 1.5rem;
+    }
+    
+    .input-item {
+        gap: 0.5rem;
+    }
+}
